@@ -1,0 +1,85 @@
+=head1 NAME
+
+md2toc - generate a table of contents from a Markdown file
+
+=head1 SYNOPSIS
+
+C<$ md2toc [>I<options>C<] some-document.md>
+
+=head1 DESCRIPTION
+
+Reads the Markdown document specified on the command-line, or standard
+input if no filename is specified, and writes out a table of contents
+for that document. The table is itself in Markdown, and is suitable to
+be embedded in the original file.
+
+The following options are available:
+
+=over 4
+
+=item B<-l> I<n>
+
+The lowest number of heading that is included in the table of
+contents is the specified I<n>: i.e. headings of level I<n>, I<n>+1,
+I<n>+2 etc. are included. Note that low-numbered headings are I<more>
+significant than higher-numbered headings.
+
+Defaults to 2, since usually the sole top-level heading in a Markdown
+document is the title.
+
+=item B<-h> I<n>
+
+The highest number of heading that is included in the table of
+contents is the specified I<n>. Defaults to 99 (i.e. in effect,
+infinity).
+
+=item B<-s> I<n>
+
+Skip the first I<n> headings, omitting them from the table of
+contents. Defaults to 0. This is useful when dealing with a Markdown
+document in which the document title is specified using the same level
+heading as the section headings; C<-s 1> will omit the document title
+from the table.
+
+=item B<-q>
+
+Generated intra-document link fragments substitute hyphens (C<->) for
+question marks (C<?>). I don't remember why this was ever needed.
+
+=item B<-a>
+
+Automatic mode. This is complicated to explain but simple to use. When
+running in this mode, C<md2toc> scans its input for the first HTML
+comment line, i.e. a line of the form
+
+  <!-- SOMETHING -->
+
+with only whitespace before or after it. It then emits a copy of that
+line followed by the output from running the I<SOMETHING> as a
+command.
+
+The result is that if a file called C<foo.md> contains a line
+
+  <!-- md2toc -l 1 -s 1 foo.md -->
+
+followed by a generated table of contents, then running the region
+consisting of the comment line and and the old table through C<md2toc
+-a> will result in that region being replaced by a regenerated table
+of contents.
+
+=back
+
+=head1 AUTHOR
+
+Mike Taylor, E<lt>mike@indexdata.comE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2020 by Index Data.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.18.2 or,
+at your option, any later version of Perl 5 you may have available.
+
+
+=cut

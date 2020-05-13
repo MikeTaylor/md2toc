@@ -3,3 +3,4 @@ Makefile.PL
 MANIFEST
 README.md
 md2toc
+md2toc.pod

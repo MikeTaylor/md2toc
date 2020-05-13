@@ -7,7 +7,10 @@ WriteMakefile(
     VERSION_FROM      => 'md2toc', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     EXE_FILES         => [ 'md2toc' ],
+    MAN1PODS          => {
+      'md2toc.pod'    => 'blib/man1/md2toc.1',
+    },
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'md2toc', # retrieve abstract from module
+      (ABSTRACT_FROM  => 'md2toc.pod', # retrieve abstract from module
        AUTHOR         => 'Mike Taylor <mike@indexdata.com>') : ()),
 );
