@@ -1,0 +1,6 @@
+Revision history for Perl extension md2toc.
+
+1.00  Wed May 13 15:40:24 2020
+	- original version; created by h2xs 1.23 with options
+		-X -n md2toc -a --skip-exporter
+
