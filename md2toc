@@ -7,8 +7,8 @@ use strict;
 use warnings;
 use Getopt::Std;
 
-package md2toc;
-our $VERSION = '1.0';
+package Markdown::TOC;
+our $VERSION = '1.1';
 
 
 my %opts = (l => 2, h => 99, s => 0, q => 0);

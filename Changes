@@ -1,6 +1,9 @@
-Revision history for Perl extension md2toc.
+Revision history for Perl extension Markdown::TOC.
 
-1.00  Thu May 14 00:26:38 2020
+1.1  (IN PROGRESS)
+	- Rename package from md2toc to Markdown::TOC.
+
+1.0  Thu May 14 00:26:38 2020
 	- original version; created by h2xs 1.23 with options
 		-X -n md2toc -a --skip-exporter
 
