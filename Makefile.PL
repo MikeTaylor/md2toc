@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
-    NAME              => 'Markdown::TOC',
+    NAME              => 'Markdown::Contents',
     VERSION_FROM      => 'md2toc', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     EXE_FILES         => [ 'md2toc' ],

@@ -1,6 +1,9 @@
-Revision history for Perl extension Markdown::TOC.
+Revision history for Perl extension Markdown::Contents.
 
-1.1  (IN PROGRESS)
+1.2  (IN PROGRESS)
+	- Rename package from Markdown::TOC to Markdown::Contents.
+
+1.1  Thu May 14 16:01:35 2020
 	- Rename package from md2toc to Markdown::TOC.
 
 1.0  Thu May 14 00:26:38 2020
