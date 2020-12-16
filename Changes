@@ -1,5 +1,8 @@
 Revision history for Perl extension Markdown::Contents.
 
+1.3  Wed Dec 16 11:22:50 GMT 2020
+	- No changes; CPAN rejects v1.2 due to an earlier failed attempt.
+
 1.2  Wed Dec 16 11:17:23 GMT 2020
 	- Rename package from Markdown::TOC to Markdown::Contents.
 
