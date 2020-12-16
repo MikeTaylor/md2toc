@@ -1,6 +1,6 @@
 Revision history for Perl extension Markdown::Contents.
 
-1.2  (IN PROGRESS)
+1.2  Wed Dec 16 11:17:23 GMT 2020
 	- Rename package from Markdown::TOC to Markdown::Contents.
 
 1.1  Thu May 14 16:01:35 2020
